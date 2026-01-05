@@ -7,8 +7,8 @@ export async function POST(request: NextRequest) {
         // Verify JWT_SECRET is configured
         if (!process.env.JWT_SECRET) {
             return NextResponse.json(
-                { error: 'Server configuration error' },
-                { status: 500 }
+                { error: 'Server configuration error 2 ' },
+                { status: 500 }  
             );
         }
 
