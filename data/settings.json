@@ -1,0 +1,15 @@
+{
+    "academyName": "أكاديمية البشائر لكرة القدم",
+    "slogan": "نصنع أبطال المستقبل",
+    "phone": "0501234567",
+    "email": "info@albashayer.com",
+    "address": "الرياض - حي النرجس",
+    "facebook": "https://facebook.com/albashayer",
+    "instagram": "https://instagram.com/albashayer",
+    "twitter": "https://twitter.com/albashayer",
+    "facebookShareText": "شاركوني الفخر بموهبة {playerName} من أكاديمية البشائر لكرة القدم! ⚽🌟",
+    "adminCredentials": {
+        "username": "admin",
+        "password": "admin123"
+    }
+}

@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  /* Core Colors - Dark Luxury Sports Aesthetic */
+  --color-primary: #0f4c24; /* Deep Football Green */
+  --color-primary-glow: #1a8f44;
+  --color-primary-light: #22c55e;
+  
+  --color-secondary: #fbbf24; /* Premium Gold */
+  --color-secondary-glow: #fcd34d;
+  
+  --color-dark: #05140b;
+  --color-dark-soft: #0a2414;
+  --color-dark-glass: rgba(5, 20, 11, 0.85);
+  
+  /* Animations */
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-reveal: reveal 0.8s ease-out forwards;
+  --animate-shine: shine 3s infinite linear;
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  @keyframes reveal {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes shine {
+    0% { background-position: 200% center; }
+    100% { background-position: -200% center; }
+  }
+}
+
+/* Custom Utilities */
+@layer utilities {
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/10 shadow-lg;
+  }
+  
+  .glass-dark {
+    @apply bg-black/60 backdrop-blur-xl border border-white/5 shadow-xl;
+  }
+  
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-md border border-white/5 shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:border-secondary/30;
+  }
+
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-secondary via-yellow-200 to-secondary;
+  }
+  
+  .btn-primary {
+    @apply px-8 py-3 rounded-full font-bold bg-primary text-white shadow-lg shadow-green-900/40 
+    transition-all duration-300 hover:bg-primary-glow hover:scale-105 hover:shadow-green-900/60
+    flex items-center gap-2;
+  }
+  
+  .btn-secondary {
+    @apply px-8 py-3 rounded-full font-bold bg-secondary text-dark shadow-lg shadow-yellow-500/20 
+    transition-all duration-300 hover:bg-secondary-glow hover:scale-105 hover:shadow-yellow-500/40
+    flex items-center gap-2;
+  }
+}
+
+/* Base Setup */
+body {
+  @apply bg-dark text-white overflow-x-hidden antialiased;
+  font-family: 'Cairo', sans-serif;
+  direction: rtl;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-dark;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/50 rounded-full hover:bg-primary;
+}

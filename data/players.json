@@ -1,0 +1,59 @@
+[
+  {
+    "id": "1",
+    "name": "أحمد محمد",
+    "age": 12,
+    "position": "مهاجم",
+    "bio": "لاعب موهوب يتميز بالسرعة والمهارات الفردية العالية",
+    "achievements": ["أفضل هداف 2024", "جائزة أفضل لاعب ناشئ"],
+    "images": [],
+    "videos": [],
+    "isFeatured": true,
+    "joinDate": "2023-01-15",
+    "subscription": {
+      "type": "شهري",
+      "amount": 150,
+      "status": "paid",
+      "lastPayment": "2024-12-01",
+      "notes": ""
+    }
+  },
+  {
+    "id": "2",
+    "name": "يوسف علي",
+    "age": 10,
+    "position": "حارس مرمى",
+    "bio": "حارس واعد بردود أفعال سريعة وتركيز عالٍ",
+    "achievements": ["أفضل حارس 2024"],
+    "images": [],
+    "videos": [],
+    "isFeatured": true,
+    "joinDate": "2023-03-20",
+    "subscription": {
+      "type": "شهري",
+      "amount": 150,
+      "status": "unpaid",
+      "lastPayment": "2024-11-01",
+      "notes": "يحتاج متابعة"
+    }
+  },
+  {
+    "id": "3",
+    "name": "عمر خالد",
+    "age": 14,
+    "position": "وسط",
+    "bio": "صانع ألعاب متميز برؤية ممتازة للملعب",
+    "achievements": ["أفضل تمريرات حاسمة 2024"],
+    "images": [],
+    "videos": [],
+    "isFeatured": false,
+    "joinDate": "2022-09-10",
+    "subscription": {
+      "type": "سنوي",
+      "amount": 1500,
+      "status": "paid",
+      "lastPayment": "2024-09-10",
+      "notes": ""
+    }
+  }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "name": "محمد أحمد",
+        "title": "المدرب الرئيسي",
+        "bio": "مدرب معتمد من الاتحاد الأردني بخبرة 15 سنة في تدريب الناشئين",
+        "image": "",
+        "experience": "15 سنة خبرة في التدريب",
+        "certifications": ["شهادة الاتحاد الأردني", "رخصة UEFA B"],
+        "isHeadCoach": true,
+        "order_index": 0
+    },
+    {
+        "name": "خالد العلي",
+        "title": "مدرب الناشئين",
+        "bio": "متخصص في تطوير المهارات الفردية للصغار",
+        "image": "",
+        "experience": "8 سنوات خبرة",
+        "certifications": ["شهادة تدريب ناشئين"],
+        "isHeadCoach": false,
+        "order_index": 1
+    },
+    {
+        "name": "سعد محمود",
+        "title": "مدرب حراس المرمى",
+        "bio": "حارس سابق في الدوري الأردني",
+        "image": "",
+        "experience": "10 سنوات كلاعب محترف",
+        "certifications": ["شهادة حراس مرمى متقدمة"],
+        "isHeadCoach": false,
+        "order_index": 2
+    }
+]
