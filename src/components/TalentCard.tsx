@@ -16,6 +16,7 @@ interface TalentCardProps {
     showShare?: boolean;
 }
 
+
 export default function TalentCard({ player, showShare = true }: TalentCardProps) {
     const hasImage = player.images && player.images.length > 0;
 
