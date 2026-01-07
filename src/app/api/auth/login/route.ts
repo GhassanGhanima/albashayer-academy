@@ -10,7 +10,7 @@ export async function POST(request: NextRequest) {
         
         if (!process.env.JWT_SECRET) {
             return NextResponse.json(
-                { error: 'Server configuration error 2 ' },
+                { error: 'Server configuration error 3 ' },
                 { status: 500 }  
             );
         }
