@@ -5,6 +5,9 @@ import { generateToken, comparePassword } from '@/lib/auth';
 export async function POST(request: NextRequest) {
     try {
         // Verify JWT_SECRET is configured
+           console.log('JWT_SECRET exists:', !!process.env.JWT_SECRET);
+        console.log('All env keys:', Object.keys(process.env).filter(k => k.includes('JWT') || k.includes('MYSQL')));
+        
         if (!process.env.JWT_SECRET) {
             return NextResponse.json(
                 { error: 'Server configuration error 2 ' },

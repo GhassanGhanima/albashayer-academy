@@ -32,10 +32,7 @@ yarn-error.log*
 *.log
 
 # env files (CRITICAL - never commit these)
-.env
-.env.local
-.env.production
-.env.development
+
 
 # uploads (optional - uncomment if you don't want to track uploads)
 # public/uploads/
