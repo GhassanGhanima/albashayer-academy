@@ -8,7 +8,7 @@ const nextConfig = {
     formats: ['image/avif', 'image/webp'],
   },
     env: {
-        JWT_SECRET: process.env.JWT_SECRET || 'albashayer_secret_key_2024',
+        JWT_SECRET: process.env.JWT_SECRET || 'albashayer_secret_key_2024_albashayer_secret_key_2024',
         MYSQL_HOST: process.env.MYSQL_HOST || 'localhost',
         MYSQL_PORT: process.env.MYSQL_PORT || '3306',
         MYSQL_USER: process.env.MYSQL_USER || 'u522164605_albashayer_2',
