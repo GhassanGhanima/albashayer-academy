@@ -50,7 +50,7 @@ export function validateEnv(): void {
   // Production-specific warnings
   if (process.env.NODE_ENV === 'production') {
     // Warn about weak JWT secret
-    const jwtSecret = 'albashayer_secret_key_2024_albashayer_secret_key_2024';
+    const jwtSecret = process.env.JWT_SECRET;
     if (jwtSecret && jwtSecret.length < 32) {
       warnings.push(
         'WARNING: JWT_SECRET should be at least 32 characters long in production'

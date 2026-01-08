@@ -8,7 +8,7 @@ import bcrypt from 'bcryptjs';
 
 // Get JWT secret from environment - NO FALLBACK for security
 const getJwtSecret = (): string => {
-    const secret = 'albashayer_secret_key_2024_albashayer_secret_key_2024';
+    const secret = process.env.JWT_SECRET;
     if (!secret) {
         throw new Error('JWT_SECRET environment variable is not configured');
     }
